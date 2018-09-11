@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<!-- //Web-Fonts -->
+    <title>The Sp_ce Menu</title>
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header">
+		<!-- navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<h1>
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" width="180px" class="img-fluid">
+				</a>
+			</h1>
+
+		</nav>
+		<!-- //navigation -->
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner-2">
+
+	</div>
+	<!-- //banner -->
+
+	<!--menu -->
+	<div class="section main-menu py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-heading text-center mb-sm-5 mb-4">
+				<h3 class="title text-capitalize text-dark">our menu</h3>
+				<p class="title-text font-weight-light font-italic mt-2">LOUNGE & RESTO – BAR</p>
+			</div>
+			
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item btn btn-default">
+					<a class="nav-link active" data-toggle="tab" href="#tabmenu1" role="tab" aria-selected="true">Breakfast</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabmenu2" role="tab" aria-selected="false">Lunch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabmenu3" role="tab" aria-selected="false">Dinner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabmenu4" role="tab" aria-selected="false">Deserts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabmenu5" role="tab" aria-selected="false">Specials</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="tabmenu1" role="tabpanel">
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<a href="menu.html"><button class="menu-title btn btn-default btn-block btn-lg"><h4>Classics</h4></button></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Go Provident</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Frumenty</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Customized Items</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="tab-pane fade" id="tabmenu2" role="tabpanel">
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Snacks</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Main Course</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Kiddies</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Tapas/Meze</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Drinks</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Teas</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Drinks</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Wines</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+			<div class="tab-pane fade" id="tabmenu3" role="tabpanel">
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Main Course</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Tapas/Meze</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Bar</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Beers</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Cocktails</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Wines</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Mocktails</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="tab-pane fade" id="tabmenu4" role="tabpanel">
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Banana Slice and Custard</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Polish Ice-cream with Chocolate Liquor</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1  border-right">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Confectionery (Croissant)</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="tab-pane fade" id="tabmenu5" role="tabpanel">
+					<div class="d-flex border-bottom">
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Shisha</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6 agileinfo-tab-content1">
+							<div class="menu-text-right1">
+								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Cigars</h4></button >
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- //menu -->
+
+	<!-- footer -->
+	<div class="mkl_footer text-center py-4">
+		<div class="container py-xl-5 py-4">
+			<div class="mkls_footer_grid">
+			<p>To our valued patrons please note that 10% gratuity is compulsory at this establishment.</p>
+				<!-- footer logo -->
+				<div class="logo2 my-sm-5 my-4">
+					<a class="" href="index.html">
+						<img src="images/logo.png" alt=" " class="img-fluid">
+					</a>
+				</div>
+				<!-- //footer logo -->
+			</div>
+			
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smooth scrolling -->
+
+	<!-- start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<!-- smooth scrolling-bottom-to-top -->
+	<script>
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<!-- //smooth scrolling-bottom-to-top -->
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- //Js files -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
