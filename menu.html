@@ -25,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 	</script>
 	<!--// Meta tag Keywords -->
-
+    <script type="text/javascript" src="jquery-3.1.1.min.js" charset="UTF-8"></script>
 	<!-- Custom-Files -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
@@ -74,81 +74,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			
 			<div class="tab-pane fade show active" id="tabmenu1" role="tabpanel">
 					<div class="d-flex border-bottom">
-						<div class="col-md-6 agileinfo-tab-content1  border-right">
-							<div class="menu-text-right1">
-							<center class="text-capitalize">
-							<a href="index.html">
-								<img src="images/breakfast-scotch-eggs.jpg" alt=" " width="220px" class="img-fluid">
-							</a>
-						</center>
-								<div class="menu-title">
-									<h4>Scotch Eggs</h4>
-								</div>
-								<div class="menu-price">
-									<h4 class="price-clr">$ 8</h4>
-								</div>
-								<div class="clearfix"></div>
-								<p> Traditional British Dish consisting of hardboiled eggs covered in sausage meat and then deep-fried,
-									served with a parsley sauce dressing dip and a garden salad
-									 Vegetarian variance available to replace the sausage meat with mashed potatoes
-									</p>
-							</div>
-						</div>
-						<div class="col-md-6 agileinfo-tab-content1">
-							<div class="menu-text-right1">
-							<center class="text-capitalize">
-							<a href="index.html">
-								<img src="images/Eggs_Benedict_blog_lg.jpg" alt=" " width="220px" class="img-fluid">
-							</a>
-						</center>
-								<div class="menu-title">
-									<h4>Eggs Benedict</h4>
-
-								</div>
-								<div class="menu-price">
-									<h4 class="price-clr">$ 10</h4>
-								</div>
-								<div class="clearfix"></div>
-								<p> Traditional American breakfast or brunch dish that consists of two halves of an English muffin each 
-								of which is topped with Macon, with a parsley sauce  and a poached egg cooked to your liking.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="d-flex border-bottom">
-						<div class="col-md-6 agileinfo-tab-content1  border-right">
-							<div class="menu-text-right1">
-							<center class="text-capitalize">
-							<a href="index.html">
-								<img src="images/eggf.jpg" alt=" " width="220px" class="img-fluid">
-							</a>
-						</center>
-								<div class="menu-title">
-									<h4>3 Egg Frittata	(choose THREE )</h4>
-
-								</div>
-								<div class="menu-price">
-									<h4 class="price-clr">$ 15</h4>
-								</div>
-								<div class="clearfix"></div>
-								<ul>
-								<li> Feta </li>
-								<li>	Olives, </li>
-								<li>	Cherry Tomato, </li> 
-								<li>	Red Onion </li>
-								<li>	Fine Herbs </li>
-								<li>	Mixed peppers </li>
-								<li>	Carrots, </li>
-								<li>	Parmesan cheese </li>
-								</ul>
-								<p>	Extra topping <b>$2 each</b></p>
-							</div>
-						</div>
+						<div id="sho_info"></div> <!-- show data here -->
 					</div>
 					
 				</div>
 	</div>
 	<!-- //menu -->
+<script>
+function myFunction() {
+	document.getElementById('demo').style.color = 'green';
+	document.getElementById('demo').innerHTML = "<i class='fa fa fa-check-square'></i>";
+	document.getElementById('cancel').style.display = 'block';
+}
+function myFunction2() {
+	document.getElementById('demo').style.color = '#000';
+	document.getElementById('demo').innerHTML = "<i class='fa fa fa-plus'> </i> Add";
+	document.getElementById('cancel').style.display = 'none';
+}
+</script>
+<script>
+$('document').ready(function(){
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+var tk = urlParams["cat"];
+var url = 'http://localhost/space/serverside/menu.php?cat=' + tk;
+$("#sho_info").load(url);     
+}); 
+</script>
 
 	<!-- footer -->
 	<div class="mkl_footer text-center py-4">
@@ -166,7 +128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<!-- //footer -->
-
+   
 	<!-- Js files -->
 	<!-- JavaScript -->
 	<script src="js/jquery-2.2.3.min.js"></script>
@@ -192,21 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- start-smoth-scrolling -->
 
 	<!-- smooth scrolling-bottom-to-top -->
-	<script>
-		$(document).ready(function () {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-		});
-	</script>
+	
 	<!-- //smooth scrolling-bottom-to-top -->
 
 	<script src="js/bootstrap.js"></script>

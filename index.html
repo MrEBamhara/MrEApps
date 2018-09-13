@@ -62,6 +62,24 @@
 	<link href="//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
 	    rel="stylesheet">
 	<!-- //Web-Fonts -->
+	<style rel="stylesheet">
+	#myBtn {
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #34495E; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+	</style>
     <title>The Sp_ce Menu</title>
 </head>
 
@@ -116,13 +134,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<a href="menu.html"><button class="menu-title btn btn-default btn-block btn-lg"><h4>Classics</h4></button></a>
+								<a href="menu.html?cat=Classics"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Classics</button></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Go Provident</h4></button >
+								<a href="menu.html?cat=Go Provident"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Go Provident</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -130,13 +148,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Frumenty</h4></button >
+								<a href="menu.html?cat=Frumenty"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Frumenty</button></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Customized Items</h4></button >
+								<a href="menu.html?cat=Customized Items"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Customized Items</button></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -147,13 +165,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Snacks</h4></button >
+								<a href="menu.html?cat=Snacks"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Snacks</button></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Main Course</h4></button >
+								<a href="menu.html?cat=Main Course"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Main Course</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -161,13 +179,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Kiddies</h4></button >
+								<a href="menu.html?cat=Kiddies"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Kiddies</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Tapas/Meze</h4></button >
+								<a href="menu.html?cat=Tapas/Meze"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Tapas/Meze</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -175,27 +193,21 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Drinks</h4></button >
+								<a href="menu.html?cat=Drinks"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Drinks</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Teas</h4></button >
+								<a href="menu.html?cat=Teas"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Teas</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 					</div>
 					<div class="d-flex border-bottom">
-						<div class="col-md-6 agileinfo-tab-content1  border-right">
-							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Drinks</h4></button >
-								<div class="clearfix"></div>
-							</div>
-						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Wines</h4></button >
+								<a href="menu.html?cat=Wines"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Wines</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -206,13 +218,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Main Course</h4></button >
+								<a href="menu.html?cat=Main Course"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Main Course</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Tapas/Meze</h4></button >
+								<a href="menu.html?cat=Tapas/Meze"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Tapas/Meze</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -220,13 +232,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Bar</h4></button >
+								<a href="menu.html?cat=Bar"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Bar</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Beers</h4></button >
+								<a href="menu.html?cat=Beers"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Beers</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -234,13 +246,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Cocktails</h4></button >
+								<a href="menu.html?cat=Cocktails"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Cocktails</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Wines</h4></button >
+								<a href="menu.html?cat=Wines"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Wines</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -248,7 +260,7 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Mocktails</h4></button >
+								<a href="menu.html?cat=Mocktails"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Mocktails</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -258,13 +270,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Banana Slice and Custard</h4></button >
+								<a href="menu.html?cat=Banana Slice and Custard"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Banana Slice and Custard</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Polish Ice-cream with Chocolate Liquor</h4></button >
+								<a href="menu.html?cat=Polish Ice-cream with Chocolate Liquor"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Polish Ice-cream with Chocolate Liquor</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -272,7 +284,7 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1  border-right">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Confectionery (Croissant)</h4></button >
+								<a href="menu.html?cat=Confectionery"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Confectionery (Croissant)</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -282,13 +294,13 @@
 					<div class="d-flex border-bottom">
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Shisha</h4></button >
+								<a href="menu.html?cat=Shisha"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Shisha</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="col-md-6 agileinfo-tab-content1">
 							<div class="menu-text-right1">
-								<button class="menu-title btn btn-default btn-block btn-lg"><h4>Cigars</h4></button >
+								<a href="menu.html?cat=Cigars"><button id="myBtn" class="menu-title btn btn-default btn-block btn-lg">Cigars</button ></a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
